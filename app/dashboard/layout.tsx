@@ -3,6 +3,7 @@ import { prisma } from "@/lib/prisma";
 import { requireTeamSession } from "@/lib/permissions";
 import { Sidebar } from "@/components/dashboard/sidebar";
 import { UserMenu } from "@/components/dashboard/user-menu";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { Badge } from "@/components/ui/badge";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
@@ -53,7 +54,10 @@ export default async function DashboardLayout({ children }: { children: React.Re
               {account.plan}
             </Badge>
           </div>
-          <UserMenu name={name} email={email} />
+          <div className="flex items-center gap-2">
+            <ThemeToggle />
+            <UserMenu name={name} email={email} />
+          </div>
         </header>
         <main className="flex-1 bg-muted/10 p-4 md:p-6">{children}</main>
       </div>

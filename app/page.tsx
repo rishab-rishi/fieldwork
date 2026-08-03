@@ -12,6 +12,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { ThemeToggle } from "@/components/theme-toggle";
 import { PLAN_FEATURES } from "@/lib/plan";
 
 const features = [
@@ -59,6 +60,7 @@ export default function Home() {
             Fieldwork
           </div>
           <div className="flex items-center gap-2">
+            <ThemeToggle />
             <Button render={<Link href="/login" />} variant="ghost">
               Log in
             </Button>
