@@ -40,7 +40,7 @@ function LoginForm() {
         <CardDescription>Welcome back. Enter your details to continue.</CardDescription>
       </CardHeader>
       <form action={formAction}>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 pb-4">
           <input type="hidden" name="callbackUrl" value={callbackUrl} />
           <div className="space-y-2">
             <Label htmlFor="email">Email</Label>

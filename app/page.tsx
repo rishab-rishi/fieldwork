@@ -78,23 +78,23 @@ export default function Home() {
           <div className="h-96 w-96 -translate-y-1/4 translate-x-1/3 rounded-full bg-chart-2/20 blur-3xl" />
         </div>
 
-        <div className="animate-in fade-in slide-in-from-bottom-2 duration-700">
+        <div className="animate-in fade-in slide-in-from-bottom-2 duration-300">
           <Badge variant="secondary" className="h-6 px-3 text-xs">
             Built for independent freelancers
           </Badge>
         </div>
 
-        <h1 className="animate-in fade-in slide-in-from-bottom-4 mt-6 max-w-2xl text-4xl font-semibold tracking-tight text-balance duration-700 sm:text-5xl">
+        <h1 className="animate-in fade-in slide-in-from-bottom-4 mt-6 max-w-2xl text-4xl font-semibold tracking-tight text-balance duration-300 sm:text-5xl">
           Run your freelance business from{" "}
           <span className="bg-linear-to-r from-primary to-chart-2 bg-clip-text text-transparent">
             one place
           </span>
         </h1>
-        <p className="animate-in fade-in slide-in-from-bottom-4 mt-4 max-w-xl text-lg text-muted-foreground duration-700 delay-100 fill-mode-both">
+        <p className="animate-in fade-in slide-in-from-bottom-4 mt-4 max-w-xl text-lg text-muted-foreground duration-300 delay-75 fill-mode-both">
           Manage clients, track projects, send professional invoices, and share files —
           without juggling five different tools.
         </p>
-        <div className="animate-in fade-in slide-in-from-bottom-4 mt-8 flex flex-col gap-3 duration-700 delay-200 fill-mode-both sm:flex-row">
+        <div className="animate-in fade-in slide-in-from-bottom-4 mt-8 flex flex-col gap-3 duration-300 delay-150 fill-mode-both sm:flex-row">
           <Button render={<Link href="/register" />} size="lg" className="group">
             Start for free
             <ArrowRight className="ml-1.5 h-4 w-4 transition-transform group-hover:translate-x-0.5" />
@@ -110,8 +110,8 @@ export default function Home() {
           {features.map((feature, i) => (
             <Card
               key={feature.title}
-              style={{ animationDelay: `${i * 75}ms` }}
-              className="animate-in fade-in slide-in-from-bottom-2 fill-mode-both group transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
+              style={{ animationDelay: `${i * 50}ms` }}
+              className="animate-in fade-in slide-in-from-bottom-2 fill-mode-both group transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/5"
             >
               <CardHeader>
                 <span className="flex h-10 w-10 items-center justify-center rounded-lg bg-accent transition-colors group-hover:bg-primary/15">
@@ -135,7 +135,7 @@ export default function Home() {
           </p>
         </div>
         <div className="mx-auto mt-8 grid max-w-2xl gap-4 sm:grid-cols-2">
-          <Card className="transition-all duration-300 hover:-translate-y-1 hover:shadow-md">
+          <Card className="transition-all duration-200 hover:-translate-y-1 hover:shadow-md">
             <CardHeader>
               <CardTitle>Free</CardTitle>
             </CardHeader>
@@ -148,7 +148,7 @@ export default function Home() {
               </ul>
             </CardContent>
           </Card>
-          <Card className="relative overflow-visible border-primary/50 ring-1 ring-primary/30 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
+          <Card className="relative overflow-visible border-primary/50 ring-1 ring-primary/30 transition-all duration-200 hover:-translate-y-1 hover:shadow-lg hover:shadow-primary/10">
             <Badge className="absolute -top-2.5 right-4">Most popular</Badge>
             <CardHeader>
               <CardTitle>Pro</CardTitle>

@@ -29,7 +29,7 @@ export default function RegisterPage() {
         <CardDescription>Set up your freelance business in a minute.</CardDescription>
       </CardHeader>
       <form action={formAction}>
-        <CardContent className="space-y-4">
+        <CardContent className="space-y-4 pb-4">
           <div className="space-y-2">
             <Label htmlFor="name">Your name</Label>
             <Input id="name" name="name" placeholder="Alex Rivera" required />
