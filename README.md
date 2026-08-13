@@ -1,5 +1,7 @@
 # Fieldwork — Freelancer Client Portal
 
+![Fieldwork homepage](SCREEN~1.JPG)
+
 A SaaS portfolio project for freelancers to manage clients, track projects, invoice, and share files — with role-based team access and a read-only client portal.
 
 ## Features
